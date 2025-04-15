@@ -1,12 +1,14 @@
 /** @type {import('@remix-run/dev').AppConfig} */
 export default {
-  serverBuildTarget: "vercel",
-  server: process.env.NODE_ENV === "development" ? undefined : "./server.js",
+  future: {
+    v2_routeConvention: true,
+  },
   ignoredRouteFiles: ["**/.*"],
 
-  // Your styling config
-  tailwind: true,
-  postcss: true,
-  serverModuleFormat: "esm",
-  serverBuildTarget: "vercel",
+  appDirectory: "app",
+  assetsBuildDirectory: "public/build",
+  publicPath: "/build/",
+
+  serverBuildDirectory: "api/build", 
+  serverModuleFormat: "esm",         
 };
