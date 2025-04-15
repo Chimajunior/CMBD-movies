@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import HeroSlider from "../components/HeroSlider";
-import Navbar from "../components/Nav";
+import Navbar from "../components/nav";
 import Footer from "../components/footer";
 import { PlusCircle, ChevronRight, ThumbsUp } from "lucide-react";
 import CarouselSection from "../components/CarouselSection";
