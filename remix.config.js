@@ -3,13 +3,12 @@ export default {
   appDirectory: "app",
   assetsBuildDirectory: "public/build",
   publicPath: "/build/",
-  serverBuildTarget: "vercel", // correct for Vercel deployment
+  serverBuildTarget: "vercel", 
   ignoredRouteFiles: ["**/.*"],
   future: {
-    v2_routeConvention: true, // enables file-based routing like _index.jsx
+    v2_routeConvention: true,
   },
 };
-
 
 
 
